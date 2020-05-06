@@ -25,8 +25,8 @@ Route::post('/checkout', function(Request $request) {
 
     try {
         $charge = Stripe::charges()->create([
-            'amount' => 20,
-            'currency' => 'CAD',
+            'amount' => 22,
+            'currency' => 'USD',
             'source' => $request->stripeToken,
             'description' => 'Description goes here',
             'receipt_email' => $request->email,

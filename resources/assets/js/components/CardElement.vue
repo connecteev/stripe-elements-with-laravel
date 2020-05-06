@@ -2,7 +2,7 @@
     <div>
         <card class='stripe-card'
           :class='{ complete }'
-          stripe='pk_test_JKVJPMynL8ckk7ivBxoroTlT'
+          stripe='pk_test_KPOySCAtnkbOZdeldkYX5f6X'
           :options='stripeOptions'
           @change='change($event)'
         />
@@ -17,28 +17,28 @@
         components: { Card },
 
         data () {
-            return {
-              complete: false,
-              errorMessage: '',
-              stripeOptions: {
-                // see https://stripe.com/docs/stripe.js#element-options for details
-                style: {
-                  base: {
-                    color: '#32325d',
-                    lineHeight: '18px',
-                    fontFamily: '"Raleway", Helvetica, sans-serif',
-                    fontSmoothing: 'antialiased',
-                    fontSize: '16px',
-                    '::placeholder': {
-                      color: '#aab7c4'
-                    }
-                  },
-                  invalid: {
-                    color: '#fa755a',
-                    iconColor: '#fa755a'
+          return {
+            complete: false,
+            errorMessage: '',
+            stripeOptions: {
+              // see https://stripe.com/docs/stripe.js#element-options for details
+              style: {
+                base: {
+                  color: '#32325d',
+                  lineHeight: '18px',
+                  fontFamily: '"Raleway", Helvetica, sans-serif',
+                  fontSmoothing: 'antialiased',
+                  fontSize: '16px',
+                  '::placeholder': {
+                    color: '#aab7c4'
                   }
                 },
-                hidePostalCode: true
+                invalid: {
+                  color: '#fa755a',
+                  iconColor: '#fa755a'
+                }
+              },
+              hidePostalCode: false
             }
           }
         },

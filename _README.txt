@@ -20,10 +20,13 @@ Put in the Stripe keys from https://dashboard.stripe.com/test/apikeys
 STRIPE_KEY=
 STRIPE_SECRET=
 
-4. 
+4. In one terminal window:
 npm install
+npm run watch
 
-5. php artisan serve (or pas)
+5. In another terminal window:
+php artisan serve (or pas)
 Go to http://localhost:8000
+Note: Go to http://127.0.0.1:8000/vue for the vue version
 and you will see a payment form (with the credit card fields loaded in a Stripe iframe, although styled to match our form)
 
